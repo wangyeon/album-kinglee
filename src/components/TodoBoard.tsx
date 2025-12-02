@@ -1,9 +1,16 @@
 import TodoItem from './TodoItem'
-function TodoBoard() {
+
+interface Props{
+    data: string[];
+}
+
+function TodoBoard({ data } : Props) {
     return (
         <div>
             <h1> Todo List </h1>
-            <TodoItem />
+            {
+                data.map((item: string) => <TodoItem item={item} />)
+            }
         </div>
     )
 }

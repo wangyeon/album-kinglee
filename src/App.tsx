@@ -1,4 +1,3 @@
-import React from 'react'
 import TodoBoard from './components/TodoBoard'
 function App() {
     return (

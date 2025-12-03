@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import TodoBoard from './components/TodoBoard'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// 페이지 컴포넌트
+import MainPage from './pages/index/MainPage'
+
+
 function App() {
-    const [inputValue, setInputValue] = useState<string>('')
-    const [todoList, setTodoList] = useState<string[]>([])
-
-    const addItem = () => {
-        if (!todoList.includes(inputValue)) {
-            setTodoList([...todoList, inputValue])
-        }
-    }
-
     return (
-        <div>
-            <input type="text" value={inputValue} onChange={(event) => setInputValue(event.target.value)} />
-            <button onClick={addItem}>추가</button>
-            <TodoBoard data={todoList} />
-        </div>
+        <MainPage />
+        // <BrowserRouter>
+        //     <Routes>
+        //         <Route index path="/" element={<MainPage />}></Route>
+        //         {/* <Route path="search/:id" element={<MainPage />}></Route> */}
+        //         {/* <Route path="/bookmark" element={<BookmarkPage />}></Route> */}
+        //     </Routes>
+        // </BrowserRouter>
     )
 }
 

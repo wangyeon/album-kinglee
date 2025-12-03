@@ -6,7 +6,7 @@ function CommonSearchBar() {
         <div className={styles.searchBar}>
             <div className={styles.searchBar__search}>
                 <input type="text" placeholder="찾으실 이미지를 검색하세요." className={styles.searchBar__search__input} />
-                <img src="/icons/icon-search.svg" alt="" />
+                <img src="icon-search.svg" alt="" />
             </div>
         </div>
     )

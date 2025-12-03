@@ -14,7 +14,7 @@ function CommonHeader() {
     return (
         <header className={styles.header}>
             <div className={styles.header__logoBox} onClick={() => moveToPage('main')}>
-                <img src="https://wangyeon.github.io/album-kinglee/src/assets/images/image-logo.png" alt="" className={styles.header__logoBox__logo} />
+                <img src="https://wangyeon.github.io/main/src/assets/images/image-logo.png" alt="" className={styles.header__logoBox__logo} />
                 <span className={styles.header__logoBox__title}>PhotoSplash</span>
             </div>
             <div className={styles.header__profileBox}>

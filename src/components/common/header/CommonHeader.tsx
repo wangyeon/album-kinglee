@@ -8,7 +8,7 @@ function CommonHeader() {
         if (filter === 'main') {
             navigate('/')
         } else {
-            navigate('/bookmark')
+            navigate('/bookmark') 
         }
     }
     return (

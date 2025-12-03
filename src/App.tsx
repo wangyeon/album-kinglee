@@ -9,7 +9,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/album-kinglee/" element={<MainPage />}></Route>
-                {/* <Route path="search/:id" element={<MainPage />}></Route> */}
+                <Route path="/album-kinglee/search/:id" element={<MainPage />}></Route>
                 {/* <Route path="/bookmark" element={<BookmarkPage />}></Route> */}
             </Routes>
         </BrowserRouter>

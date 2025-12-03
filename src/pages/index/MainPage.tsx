@@ -2,6 +2,7 @@ import CommonHeader from '../../components/common/header/CommonHeader'
 import styles from './styles/index.module.scss'
 import CommonSearchBar from '../../components/common/searchBar/CommonSearchBar'
 import CommonNav from '../../components/common/navigation/CommonNav'
+import CommonFooter from '../../components/common/footer/CommonFooter'
 
 function MainPage() {
 
@@ -29,8 +30,7 @@ function MainPage() {
                 </div>
             </div>
             {/* 공통 푸터 UI 부분 */}
-            {/* <CommonFooter />
-        {open && <DetailDialog data={imgData} handleDialog={setOpen} />} */}
+            <CommonFooter />        
         </div>
     )
 }

@@ -6,9 +6,9 @@ function CommonHeader() {
     // 북마크 페이지로 이동
     const moveToPage = (filter: string) => {
         if (filter === 'main') {
-            navigate('/')
+            navigate('/album-kinglee/')
         } else {
-            navigate('/bookmark') 
+            navigate('/album-kinglee/bookmark') 
         }
     }
     return (

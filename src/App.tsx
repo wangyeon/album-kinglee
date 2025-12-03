@@ -10,7 +10,7 @@ function App() {
             <Routes>
                 <Route path="/album-kinglee/" element={<MainPage />}></Route>
                 <Route path="/album-kinglee/search/:id" element={<MainPage />}></Route>
-                {/* <Route path="/bookmark" element={<BookmarkPage />}></Route> */}
+                <Route path="/bookmark" element={<MainPage />}></Route>
             </Routes>
         </BrowserRouter>
     )

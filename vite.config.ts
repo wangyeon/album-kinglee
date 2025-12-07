@@ -15,6 +15,7 @@ export default defineConfig({
             '@recoil': fileURLToPath(new URL('./src/recoil', import.meta.url)),
             '@types': fileURLToPath(new URL('./src/types', import.meta.url)),
             '@apis': fileURLToPath(new URL('./src/apis', import.meta.url)),
+            '@stores': fileURLToPath(new URL('./src/stores', import.meta.url)),
         },
     },
     // SCSS 전역 사용

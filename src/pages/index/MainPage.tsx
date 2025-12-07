@@ -17,14 +17,16 @@ function MainPage() {
         const PER_PAGE = 30
 
         const searchValue = 'office';
-        const pageValue = 100;
+        const pageValue = 1;
 
         try {
+
             const res = await axios.get(`${API_URL}?query=${searchValue}&per_page=${PER_PAGE}&client_id=${ACCESS_KEY}&page=${pageValue}`)
             console.log(res.data)
             if (res.status === 200) {
                 setImgUrls(res.data.results)
             }
+            console.log('count value from store:', count);
         } catch (error) {
             console.error('Error fetching data:', error)
         }

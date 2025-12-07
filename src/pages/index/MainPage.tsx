@@ -26,7 +26,6 @@ function MainPage() {
             if (res.status === 200) {
                 setImgUrls(res.data.results)
             }
-            console.log('count value from store:', count);
         } catch (error) {
             console.error('Error fetching data:', error)
         }
